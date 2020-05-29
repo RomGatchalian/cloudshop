@@ -21,14 +21,14 @@
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('info@yourcloudshop.com', 'Mailer');
+    $mail->setFrom('noreply@yourcloudshop.com', 'Mailer');
     $mail->addAddress('info@yourcloudshop.com', 'YourCloudShop');     // Add a recipient
 
-    $content  = "Full Name: "      . $_POST["name"]    . "\r\n";
-    $content .= "Store Name: " . $_POST["store_name"]   . "\r\n";
-    $content .= "Email: " . $_POST["email"]   . "\r\n";
-    $content .= "Mobile Number: " . $_POST["mobile_no"]   . "\r\n";
-    $content .= "Message: "     . $_POST["message"]   . "\r\n";
+    $content  = "Full Name: "      . $_POST["name"]    . "<br>";
+    $content .= "Store Name: " . $_POST["store_name"]   . "<br>";
+    $content .= "Email: " . $_POST["email"]   . "<br>";
+    $content .= "Mobile Number: " . $_POST["mobile_no"]   . "<br>";
+    $content .= "Message: "     . $_POST["message"]   . "<br>";
     
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
