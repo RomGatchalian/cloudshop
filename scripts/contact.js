@@ -44,9 +44,9 @@ var Contact = function() {
 					url: 'php/contact.php',
 					dataType: 'JSON',
 					data: {
-						name: name,
-                        email: email,
+                        name: name,
                         store_name: store_name,
+                        email: email,
 						mobile_no: mobile_no,
 						message: message,
 					},

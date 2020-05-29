@@ -1,7 +1,6 @@
 <?php
-
 	// Mail settings
-	$to      = "info@yourcloudshop.com";
+	$to      = "romgatchalian@gmail.com";
 	$subject = "YOURCLOUDSHOP Inquiry";
 
 	// You can put here your email
