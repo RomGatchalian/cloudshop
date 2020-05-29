@@ -21,8 +21,8 @@
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('info@yourcloudshop.com', 'YourCloudShop Mailer');
-    $mail->addAddress('noreply@yourcloudshop.com', 'No-Reply');     // Add a recipient
+    $mail->setFrom('info@yourcloudshop.com', 'YourCloudShop Inquiry Mailer');
+    $mail->addAddress('yourcloudshop2020@gmail.com', 'YourCloudShop');     // Add a recipient
 
     $content  = "Full Name: "      . $_POST["name"]    . "<br>";
     $content .= "Store Name: " . $_POST["store_name"]   . "<br>";
