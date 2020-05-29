@@ -667,18 +667,18 @@
 							<h4 class="mb-5">Please fill-in information so we can contact you</h4>
 							
 							<!-- -->
-							<form>
+							<form id="contact-form" method="POST">
 								<!-- -->
 								<div class="row mb-2 sr-up sr-delay-1">
 									<!-- -->
 									<div class="col-md-6">
-										<input type="text" class="form-control" placeholder="Full Name *">
+										<input type="text" class="form-control" placeholder="Full Name *" name="name">
 									</div>
 									<!-- / -->
 									
 									<!-- -->
 									<div class="col-md-6">
-										<input type="text" class="form-control" placeholder="Store Name *">
+										<input type="text" class="form-control" placeholder="Store Name *" name="store_name">
 									</div>
 									<!-- / -->
 								</div>
@@ -688,13 +688,13 @@
 								<div class="row mb-2 sr-up sr-delay-2">
 									<!-- -->
 									<div class="col-md-6">
-										<input type="text" class="form-control" placeholder="Email Address *">
+										<input type="email" class="form-control" placeholder="Email Address *" name="email">
 									</div>
 									<!-- / -->
 									
 									<!-- -->
 									<div class="col-md-6">
-										<input type="text" class="form-control" placeholder="Mobile Number *">
+										<input type="text" class="form-control" placeholder="Mobile Number *" name="mobile_no">
 									</div>
 									<!-- / -->
 								</div>
@@ -704,7 +704,7 @@
 								<div class="row mb-4 sr-up sr-delay-3">
 									<!-- -->
 									<div class="col-md-12">
-										<textarea class="form-control" placeholder="Message *"></textarea>
+										<textarea class="form-control" placeholder="Message *" name="message"></textarea>
 									</div>
 									<!-- / -->
 								</div>
@@ -714,7 +714,7 @@
 								<div class="row sr-up sr-delay-4">
 									<!-- -->
 									<div class="col-md-12">
-										<button class="btn btn-primary">Get Started</button>
+										<button type="submit" class="btn btn-primary">Get Started</button>
 									</div>
 									<!-- / -->
 								</div>
@@ -940,6 +940,9 @@
 		<script src="scripts/smooth-scroll.js"></script>
 		<script src="scripts/scripts.js"></script>
 		<script src="scripts/customscrollbar.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script src="scripts/contact.js"></script>
 		<script type="text/javascript">
 		</script>
 	</body>
